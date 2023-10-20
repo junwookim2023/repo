@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\prog1700-2023Fall---assignment-2-junwookim2023\\p3-autoInsurance.js",
+            "program": "${file}",
             "console": "integratedTerminal"
         }
     ]
