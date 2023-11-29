@@ -1,0 +1,35 @@
+/* Updated styles for radio buttons */
+form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    width: 100%; /* Make the label take full width */
+  }
+  
+  form input {
+    margin-right: 5px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  form label span {
+    margin-right: 5px;
+    flex-grow: 1; /* Allow the span to grow and take up available space */
+  }
+  
+  /* Added styles for radio container */
+  .radio-container {
+    display:contents;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .radioLeft {
+    align-content: left;
+    display: inline;
+  }

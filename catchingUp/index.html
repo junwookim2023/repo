@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Webpage Title</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    select,
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    .flex-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .flex-item {
+      flex: 0 0 48%;
+      margin-bottom: 10px;
+    }
+
+    .right-panel {
+      flex: 0 0 48%;
+      text-align: left;
+      /* Align content to the left */
+    }
+
+    .country-info {
+      margin-bottom: 20px;
+      /* Adjusted margin */
+    }
+
+    /* Added styles for radio buttons */
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    form label {
+      display: flex;
+      justify-content: flex-start;
+      /* Align items to the left */
+      width: 100%;
+      /* Make the label take full width */
+    }
+
+    form input {
+      margin-right: 5px;
+    }
+
+    form label span {
+      margin-right: 5px;
+    }
+
+    /* Added styles for radio container */
+    .radio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 10px; /* Add margin to move the radio container down */
+}
+  </style>
+</head>
+
+<body>
+
+  <div class="flex-container">
+
+    <!-- First Select Bar -->
+    <div class="flex-item">
+      <label for="select1">Choose a country from the list:</label>
+      <select id="select1">
+        <option value="option1">Select One</option>
+        <option value="option2">Option 2</option>
+        <!-- Add more options as needed -->
+      </select>
+    </div>
+
+    <!-- Right Panel -->
+    <div class="flex-item right-panel">
+
+      <!-- "Country info -->
+      <div class="country-info">
+        <label>Country Info:</label>
+      </div>
+
+      <!-- "Population:" Label with Blank Bar -->
+      <div>
+        <label for="population">Population:</label>
+        <input type="text" id="population">
+      </div>
+
+      <!-- Second Select Bar -->
+      <div>
+        <label for="select2">Area in:</label>
+        <select id="select2">
+          <option value="optionA">Sq. miles</option>
+          <option value="optionB">Sq. KM</option>
+          <input type="text" id="areaIn">
+        </select>
+      </div>
+
+      <!-- Option Buttons -->
+      <div>
+            <input type="radio" name="options" value="option1">
+            Per Square Mile
+            <input type="radio" name="options" value="option2">
+            Per Square KM
+          <input type="text" id="populationDensity">
+        </form>
+      </div>
+
+      <!-- Add more HTML elements as needed -->
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
